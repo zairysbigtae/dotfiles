@@ -1,5 +1,13 @@
 return {
   {
+    "folke/snacks.nvim",
+    priority = 1000,
+    lazy = false,
+    config = function()
+      require("snacks").setup()
+    end,
+  },
+  {
     "echasnovski/mini.files",
     config = function()
       require("mini.files").setup({})
@@ -27,15 +35,31 @@ return {
       })
     end,
   },
+  -- {
+  --   "rebelot/kanagawa.nvim",
+  --   config = function()
+  --     require("kanagawa").setup({
+  --       theme = "all",
+  --       undercurl = true,
+  --     })
+  --     vim.cmd("colorscheme kanagawa")
+  --   end,
+  -- },
+  -- {
+  --   "sainnhe/everforest",
+  --   config = function()
+  --     vim.cmd("colorscheme everforest")
+  --     vim.g.everforest_background = "hard"
+  --     vim.g.everforest_enable_italic = 1
+  --   end,
+  -- },
   {
-    "rebelot/kanagawa.nvim",
-    config = function()
-      require("kanagawa").setup({
-        theme = "all",
-        undercurl = true,
-      })
-      vim.cmd("colorscheme kanagawa")
-    end,
+    "catppuccin/nvim",
+    flavour = "latte",
+    background = {
+      light = "latte",
+      dark = "macchiato",
+    },
   },
   { "folke/noice.nvim", enabled = false },
   { "nvimdev/dashboard-nvim", enabled = false },

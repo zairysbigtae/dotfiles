@@ -5,3 +5,5 @@ require("config.lazy")
 -- require("plugins.ui")
 -- require("plugins.dap")
 -- require("plugins.keymaps")
+
+vim.cmd.colorscheme("catppuccin")

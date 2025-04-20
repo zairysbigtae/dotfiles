@@ -34,6 +34,7 @@ return {
       lspconfig.vimls.setup({ on_attach = on_attach })
       lspconfig.zls.setup({ on_attach = on_attach })
       lspconfig.clangd.setup({ on_attach = on_attach })
+      lspconfig.pyright.setup({ on_attach = on_attach })
     end,
   },
 }
